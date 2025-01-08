@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qamees Hareer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #403d3d;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 80px;
+            margin-right: 10px;
+        }
+
+        header .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url("back.jpg") no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+        }
+
+        .products, .blog {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product, .blog-post {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .product:hover, .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img, .blog-post img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="cloth-Photoroom.png"alt="Qamees Hareer Logo">
+            <span>Qamees Hareer</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <div>
+            <h1>Welcome to Qamees Hareer</h1>
+            <p>Explore our exclusive collection and redefine your style.</p>
+        </div>
+    </div>
+
+    <section id="products">
+        <h2 style="text-align:center;">Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="asian.jpg" alt="Product 1">
+                <h3>Drop Shoulder Shirt</h3>
+                <p>$40</p>
+            </div>
+            <div class="product">
+                <img src="young.jpg" alt="Product 2">
+                <h3>Cargo Pant</h3>
+                <p>$60</p>
+            </div>
+            <div class="product">
+                <img src="JACKE.jpg" alt="Product 3">
+                <h3>Casual Jacket</h3>
+                <p>$80</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2 style="text-align:center;">From Our Blog</h2>
+        <div class="blog">
+            <div class="blog-post">
+                <img src="JUR.jpg" alt="Blog 1">
+                <h3>Top Fashion Trends</h3>
+                <p>Stay updated with the latest trends in the fashion world.</p>
+            </div>
+            <div class="blog-post">
+                <img src="T.jpg" alt="Blog 2">
+                <h3>Styling Tips</h3>
+                <p>Learn how to style your outfits for any occasion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 style="text-align:center;">Contact Us</h2>
+        <form style="max-width: 600px; margin: 0 auto;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" style="width: 100%; margin-bottom: 10px; padding: 8px;">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" style="width: 100%; margin-bottom: 10px; padding: 8px;">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" style="width: 100%; margin-bottom: 10px; padding: 8px;"></textarea>
+
+            <button type="submit" style="width: 100%; padding: 10px; background-color: #f39c12; color: #fff; border: none;">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Qamees Hareer. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
